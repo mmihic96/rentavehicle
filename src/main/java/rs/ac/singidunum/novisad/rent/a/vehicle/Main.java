@@ -38,12 +38,13 @@ public class Main {
 
 				logged = mainController.doLogin(username, password);
 				if (!logged) {
-					System.out.println("Wrong username or password. Please try again.\n");
+					mainView.displayErrorMsg("Wrong username or password. Please try again.\n");
 				}
 			}
 			while (logged) {
 				mainView.displayLoggedUser();
 				if (!mainController.checkAuth()) {
+					mainView.displayErrorMsg("Sorry you are not authorized. Exiting application...");
 					engine = false;
 					return;
 				}

@@ -28,8 +28,6 @@ public class MainController {
 		if (className.equals("Clerk") || className.equals("Renter")) {
 			return true;
 		}
-
-		System.out.println("Sorry you are not authorized. Exiting application...");
 		return false;
 	}
 

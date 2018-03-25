@@ -57,4 +57,8 @@ public class MainView {
 		}
 	}
 
+	public void displayErrorMsg(String string) {
+		System.out.println(string);
+	}
+
 }
