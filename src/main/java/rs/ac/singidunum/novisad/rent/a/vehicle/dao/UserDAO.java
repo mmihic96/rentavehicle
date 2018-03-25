@@ -9,8 +9,6 @@ import rs.ac.singidunum.novisad.rent.a.vehicle.model.User;
  */
 public interface UserDAO {
 	
-
-	
 	/**
 	 * 
 	 * @param username
